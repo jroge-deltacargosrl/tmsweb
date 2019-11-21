@@ -1,0 +1,33 @@
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\bin\Debug\netcoreapp2.2\TMS Web.deps.json
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\bin\Debug\netcoreapp2.2\TMS Web.runtimeconfig.json
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\bin\Debug\netcoreapp2.2\TMS Web.runtimeconfig.dev.json
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\bin\Debug\netcoreapp2.2\TMS Web.dll
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\bin\Debug\netcoreapp2.2\TMS Web.pdb
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\bin\Debug\netcoreapp2.2\TMS Web.Views.dll
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\bin\Debug\netcoreapp2.2\TMS Web.Views.pdb
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.RazorAssemblyInfo.cache
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.RazorAssemblyInfo.cs
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.AssemblyInfoInputs.cache
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.AssemblyInfo.cs
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.TagHelpers.input.cache
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.TagHelpers.output.cache
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.RazorCoreGenerate.cache
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.RazorTargetAssemblyInfo.cache
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.RazorTargetAssemblyInfo.cs
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.Views.pdb
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.dll
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.pdb
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.csproj.CopyComplete
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\bin\Debug\netcoreapp2.2\appsettings.Development.json
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\bin\Debug\netcoreapp2.2\appsettings.json
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Usuario.cshtml.g.cs
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.csprojAssemblyReference.cache

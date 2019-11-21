@@ -1,0 +1,119 @@
+﻿
+@using TMS_Web.Models;
+@model IEnumerable<UsuarioModel>
+
+@{
+    ViewData["Title"] = "Administracion Usuarios";
+}
+
+<h2 style="text-align:left; padding:10px;">Administracion de Usuarios</h2>
+@*
+        <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+*@
+
+<table class="table table-hover" id="tblUsuarios" style="table-layout:fixed; width:100%; word-wrap:break-word;">
+    <thead>
+        <tr>
+            <th style="display:none;">
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.password)
+                </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.tipo_c)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipo_s)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipo_e)
+            </th>
+            <th>
+                Acción
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            bool[] ckCliente = new bool[Model.Count()];
+            bool[] ckProveedor = new bool[Model.Count()];
+            bool[] ckEmpleados = new bool[Model.Count()];
+            int index = 0;
+        }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="display:none;">
+                    <span>
+                        @Html.DisplayFor(modelItem => item.id)
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        @Html.DisplayFor(modelItem => item.email)
+                    </span>
+
+                </td>   
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.password)
+                    </td>*@
+                <td>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        @{
+                            ckCliente[index] = Convert.ToBoolean(item.tipo_c);
+                        }
+                        @Html.CheckBoxFor(modelItem => ckCliente[index], new { @class = "custom-control-input" })
+                        <label class="custom-control-label" asp-for="@ckCliente[index]">Habilitar</label>
+                    </div>
+
+                </td>
+                <td>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        @{
+                            ckProveedor[index] = Convert.ToBoolean(item.tipo_s);
+                        }
+                        @Html.CheckBoxFor(modelItem => ckProveedor[index], new { @class = "custom-control-input" })
+                        <label class="custom-control-label" asp-for="@ckProveedor[index]">Habilitar</label>
+                    </div>
+                </td>
+                <td>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        @{
+                            ckEmpleados[index] = Convert.ToBoolean(item.tipo_e);
+                        }
+                        @Html.CheckBoxFor(modelItem => ckEmpleados[index], new { @class = "custom-control-input" })
+                        <label class="custom-control-label" asp-for="@ckEmpleados[index]">Habilitar</label>
+                    </div>
+
+                </td>
+                <td>
+                    <a href="@Url.Action("RefreshUser", "Usuario", new { a1 = ckEmpleados[index], a2 = ckCliente[index], a3 = ckProveedor[index] })" class="btn btn-outline-secondary">
+                        <i class="fas fa-sync">
+                            Actualizar
+                        </i>
+                    </a>
+                    <a href="javascript:generatePasswordForUser(@index);" class="btn btn-outline-primary">
+                        <i class="fas fa-key">
+                            Enviar Contraseña
+                        </i>
+                    </a>
+                </td>
+
+                @{
+                    index++;
+                }
+
+
+                @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+            </tr>
+        }
+    </tbody>
+</table>

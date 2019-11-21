@@ -1,0 +1,9 @@
+﻿.tableCustom{
+    table-layout:fixed;
+    width:100%;
+    word-wrap:break-word;
+}
+
+.idhidden{
+    display:none;
+}

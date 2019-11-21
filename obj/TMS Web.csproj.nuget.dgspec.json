@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS\\TMS WebApp\\TMS Web\\TMS Web.csproj": {}
+    "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS (Services y WebApp)\\TMS Web\\TMS Web.csproj": {}
   },
   "projects": {
-    "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS\\TMS WebApp\\TMS Web\\TMS Web.csproj": {
+    "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS (Services y WebApp)\\TMS Web\\TMS Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS\\TMS WebApp\\TMS Web\\TMS Web.csproj",
+        "projectUniqueName": "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS (Services y WebApp)\\TMS Web\\TMS Web.csproj",
         "projectName": "TMS Web",
-        "projectPath": "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS\\TMS WebApp\\TMS Web\\TMS Web.csproj",
+        "projectPath": "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS (Services y WebApp)\\TMS Web\\TMS Web.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS\\TMS WebApp\\TMS Web\\obj\\",
+        "outputPath": "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS (Services y WebApp)\\TMS Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -59,13 +59,33 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.TypeScript.MSBuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.6.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.6.10, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
