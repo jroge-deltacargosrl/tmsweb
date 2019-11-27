@@ -31,3 +31,39 @@ E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS 
 E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
 E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
 E:\Documentacion Trabajo\DELTA CARGO\Implementacion\TMS (Services y WebApp)\TMS Web\obj\Debug\netcoreapp2.2\TMS Web.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\bin\Debug\netcoreapp2.2\TMS Web.deps.json
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\bin\Debug\netcoreapp2.2\TMS Web.runtimeconfig.json
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\bin\Debug\netcoreapp2.2\TMS Web.runtimeconfig.dev.json
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\bin\Debug\netcoreapp2.2\TMS Web.dll
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\bin\Debug\netcoreapp2.2\TMS Web.pdb
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\bin\Debug\netcoreapp2.2\TMS Web.Views.dll
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\bin\Debug\netcoreapp2.2\TMS Web.Views.pdb
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\TMS Web.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\TMS Web.RazorAssemblyInfo.cache
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\TMS Web.RazorAssemblyInfo.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\TMS Web.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\TMS Web.AssemblyInfo.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\TMS Web.TagHelpers.input.cache
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\TMS Web.TagHelpers.output.cache
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\TMS Web.RazorCoreGenerate.cache
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Usuario.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\TMS Web.RazorTargetAssemblyInfo.cache
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\TMS Web.RazorTargetAssemblyInfo.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\TMS Web.Views.pdb
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\TMS Web.dll
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\TMS Web.pdb
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\TMS Web.csproj.CopyComplete
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Operation\Index.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Configuration\Index.cshtml.g.cs

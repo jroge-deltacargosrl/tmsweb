@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS (Services y WebApp)\\TMS Web\\TMS Web.csproj": {}
+    "C:\\Users\\hp\\Desktop\\DeltaCargo\\Delta Cargo SRL\\tms-web\\TMS Web.csproj": {}
   },
   "projects": {
-    "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS (Services y WebApp)\\TMS Web\\TMS Web.csproj": {
+    "C:\\Users\\hp\\Desktop\\DeltaCargo\\Delta Cargo SRL\\tms-web\\TMS Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS (Services y WebApp)\\TMS Web\\TMS Web.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\DeltaCargo\\Delta Cargo SRL\\tms-web\\TMS Web.csproj",
         "projectName": "TMS Web",
-        "projectPath": "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS (Services y WebApp)\\TMS Web\\TMS Web.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "E:\\Documentacion Trabajo\\DELTA CARGO\\Implementacion\\TMS (Services y WebApp)\\TMS Web\\obj\\",
+        "projectPath": "C:\\Users\\hp\\Desktop\\DeltaCargo\\Delta Cargo SRL\\tms-web\\TMS Web.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\DeltaCargo\\Delta Cargo SRL\\tms-web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -68,7 +68,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[2.2.3, )"
+              "version": "[2.2.4, )"
             },
             "RestSharp": {
               "target": "Package",
