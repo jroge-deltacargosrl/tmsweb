@@ -26,7 +26,5 @@ namespace TMS_Web.Utils
         }
 
         public static bool isNull<T>(T obj) => obj == null;
-
-
     }
 }

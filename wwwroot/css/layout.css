@@ -1,0 +1,14 @@
+﻿.btn-sesion {
+    border: none;
+    border-left: lightgray 2px solid;
+    height: inherit;
+    color: black;
+    padding-top: 1.7%;
+    font-size:100%;
+}
+    .btn-sesion:hover {
+        font-size: 120%;
+    }
+.bk-white {
+    background-color:white;
+}

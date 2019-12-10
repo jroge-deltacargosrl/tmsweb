@@ -67,3 +67,9 @@ C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\T
 C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.cshtml.g.cs
 C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Operation\Index.cshtml.g.cs
 C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Configuration\Index.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Extra.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\User\Index.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Task\Index.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Service\Index.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Truck\Index.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Company\Index.cshtml.g.cs

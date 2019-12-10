@@ -1,7 +1,112 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
 }
-
+<!-- Sincronizar Contactos Odoo - Azure
+- Gestion de Plantilla de Tareas de proyectos
+- Gestion de Informacion de Los archivos en azure blob storage
+- Gestion de Empresas
+- Gestion de Tipo de Servicio
+- Gestion de Tipo de Camion
+- Gestion de Unidades de Medida-->
+<link href="~/css/configuration.css" rel="stylesheet" type="text/css" />
 <h1>Configuraciones</h1>
-
+<ul class="options displayBlock">
+    <li>
+        <div style="display:flex;width:100%;padding:0 5% 0 5%">
+            <div style="width:50%;">
+                <h4>Sincronizar contactos ODOO - Azure</h4>
+            </div>
+            <div style="width:50%;">
+                <div style="float:right;">
+                    <a href="/Configuration/Sincronize">
+                        <button class="btn btn-primary">Actualizar contactos</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div style="display:flex;width:100%;padding:0 5% 0 5%">
+            <div style="width:50%;">
+                <h4>Tareas</h4>
+            </div>
+            <div style="width:50%;">
+                <div style="float:right;">
+                    <a href="/Task/Index">
+                        <button class="btn btn-primary">Ver</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div style="display:flex;width:100%;padding:0 5% 0 5%">
+            <div style="width:50%;">
+                <h4>Archivos en Azure Blob Storage</h4>
+            </div>
+            <div style="width:50%;">
+                <div style="float:right;">
+                    <a href="/File/Index">
+                        <button class="btn btn-primary">Ver</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div style="display:flex;width:100%;padding:0 5% 0 5%">
+            <div style="width:50%;">
+                <h4>Empresas</h4>
+            </div>
+            <div style="width:50%;">
+                <div style="float:right;">
+                    <a href="/Company/Index">
+                        <button class="btn btn-primary">Ver</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div style="display:flex;width:100%;padding:0 5% 0 5%">
+            <div style="width:50%;">
+                <h4>Tipos de servicio</h4>
+            </div>
+            <div style="width:50%;">
+                <div style="float:right;">
+                    <a href="/Service/Index">
+                        <button class="btn btn-primary">Ver</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div style="display:flex;width:100%;padding:0 5% 0 5%">
+            <div style="width:50%;">
+                <h4>Tipos de camion</h4>
+            </div>
+            <div style="width:50%;">
+                <div style="float:right;">
+                    <a href="/Truck/Index">
+                        <button class="btn btn-primary">Ver</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div style="display:flex;width:100%;padding:0 5% 0 5%">
+            <div style="width:50%;">
+                <h4>Unidades de medida</h4>
+            </div>
+            <div style="width:50%;">
+                <div style="float:right;">
+                    <a href="/Units/Index">
+                        <button class="btn btn-primary">Ver</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>

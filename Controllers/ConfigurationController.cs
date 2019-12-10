@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using TMS_Web.Models.DAL;
 
 namespace TMS_Web.Controllers
 {
@@ -10,6 +8,12 @@ namespace TMS_Web.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult Sincronize()
+        {
+            ConfigurationDAL.sincronizeOdooContacts();
+            return RedirectToAction("Index");
         }
     }
 }

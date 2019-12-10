@@ -1,85 +1,43 @@
-﻿
+﻿@model TMS_Web.Models.UserModel;
 @{
     ViewData["Title"] = "Login";
 }
-<style>
-    h1 {
-        text-align: center;
-    }
-
-    .loginForm {
-        width: 40%;
-        border: 2px #ec9404 solid;
-        margin: auto;
-        border-radius: 10%;
-    }
-
-        .loginForm input {
-            width: 90%;
-            display: block;
-            margin:10% auto 0 auto;
-            font-size: 150%;
-        }
-        .loginForm .submit {
-            width:90%!important;
-            margin:5%;
-            background-color:#ec9404;
-            border:solid 2px #ec9404;
-        }
-            .loginForm .submit:hover {
-                border:gray solid 2px;
-                color:gray;
-            }
-        .loginForm .invalid-feedback {
-            margin:0 0 0 5%;
-        }
-    .mb-3 {
-        margin:0!important;
-    }
-</style>
+<link rel="stylesheet" href="~/css/Login.css" />
 <h1>Iniciar sesión</h1>
-<form class="needs-validation loginForm" novalidate action="/Operation/Index"method="post">
+<form class="needs-validation loginForm" asp-action="Index" asp-Controller="Operation" method="post">
     <div class="form-row">
-         <div class="col-md-12 mb-3">
-            <input type="email"placeholder="email@@ejemplo.com" class="form-control" id="validationCustom05" required>
-            <div class="invalid-feedback">
-                Debe introducir un correo válido.
-            </div>
+        <div class="col-md-12 mb-3">
+            <input asp-for="email" type="email" value=@ViewBag.antiguoUsuario class="form-control">
+            @if (ViewBag.estadoUsuario == 1)
+            {
+                <div class="invalid-feedback">
+                    Usuario no existe
+                </div>
+            }
+            else if (ViewBag.estadoUsuario == 2)
+            {
+                <div class="invalid-feedback">
+                    Debe introducir un Usuario
+                </div>
+            }
         </div>
     </div>
     <div class="form-row">
         <div class="col-md-12 mb-3">
-            <input type="password" placeholder="Contraseña"class="form-control" id="validationCustom05" required>
-            <div class="invalid-feedback">
-                Debe introducir una contraseña.
-            </div>
+            <input type="password" asp-for="password"  class="form-control">
+            @if (ViewBag.estadoContraseña == 1)
+            {
+               <div class="invalid-feedback">
+                    Contraseña incorrecta.
+                </div>
+            }
+            else if (ViewBag.estadoContraseña == 2)
+            {
+                 <div class="invalid-feedback">
+                    Debe introducir una Contraseña.
+                </div>
+            }
         </div>
     </div>
-    <div class="form-group">
-        <div class="form-check">
-            <input hidden class="form-check-input" type="checkbox" value="" id="invalidCheck">
-        </div>
-    </div>
-    <button class="btn btn-primary submit" type="submit"href="/Operation/Index">Ingresar</button>
+    <button class="btn btn-primary submit" type="submit">Ingresar</button>
 </form>
-
-<script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-        'use strict';
-        window.addEventListener('load', function () {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.getElementsByClassName('needs-validation');
-            // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(forms, function (form) {
-                form.addEventListener('submit', function (event) {
-                    if (form.checkValidity() === false) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                    }
-                    form.classList.add('was-validated');
-                }, false);
-            });
-        }, false);
-    })();
-</script>

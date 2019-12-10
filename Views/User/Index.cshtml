@@ -1,0 +1,129 @@
+﻿@using TMS_Web.Models;
+@model IEnumerable<UsuarioModel>
+@{
+    ViewData["Title"] = "Administracion Usuarios";
+}
+
+<h1 style="text-align:left; padding:10px;">Administracion de Usuarios</h1>
+@*
+        <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+*@
+
+<table class="table table-hover" id="tblUsuarios" style="table-layout:fixed; width:100%; word-wrap:break-word;">
+    <thead>
+        <tr>
+            <th style="display:none;">
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.clientType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.supplierType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.employeeType)
+            </th>
+            <th>
+                Acción
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (UsuarioModel item in Model)
+        {
+            <tr>
+                <td style="display:none;">
+                    <span>
+                        @Html.DisplayFor(modelItem => item.id)
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        @Html.DisplayFor(modelItem => item.email)
+                    </span>
+                </td>
+                <td>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        @{
+                            string nuevoId = "client-" + item.id;
+                        }
+                        @if (item.clientType == 1)
+                        {
+                            <input id=@nuevoId class="custom-control-input clientStates" type="checkbox" checked />
+                        }
+                        else
+                        {
+                            <input id="@nuevoId" class="custom-control-input clientStates" type="checkbox" />
+                        }
+                        <label class="custom-control-label">Habilitar</label>
+                    </div>
+
+                </td>
+                <td>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        @{
+                            string nuevoId2 = "employee-" + item.id;
+                        }
+                        @if (item.supplierType == 1)
+                        {
+                            <input id="@nuevoId2" class="custom-control-input clientStates" type="checkbox" checked />
+                        }
+                        else
+                        {
+                            <input id="@nuevoId2" class="custom-control-input clientStates" type="checkbox" />
+                        }
+                        <label class="custom-control-label">Habilitar</label>
+                    </div>
+                </td>
+                <td>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        @{
+                            string nuevoId3 = "supplier-" + item.id;
+                        }
+                        @if (item.employeeType == 1)
+                        {
+                            <input id="@nuevoId3" class="custom-control-input clientStates" type="checkbox" checked />
+                        }
+                        else
+                        {
+                            <input id="@nuevoId3" class="custom-control-input clientStates" type="checkbox" />
+                        }
+                        <label class="custom-control-label">Habilitar</label>
+                    </div>
+                </td>
+                <td>
+                    <a id="@item.id" href="a" class="btn btn-outline-secondary">
+                        <i class="fas fa-sync">
+                            Actualizar
+                        </i>
+                    </a>
+                    @if (item.canSend)
+                    {
+                        string idToSendPassword = "/SendPassword/" + item.id;
+                        <a href=@idToSendPassword class="btn btn-outline-primary">
+                            <i class="fas fa-key">
+                                Enviar Contraseña
+                            </i>
+                        </a>
+                    }
+                </td>
+                @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+            </tr>
+        }
+    </tbody>
+</table>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+@if (ViewBag.response == 1)
+{
+    <script>
+        alert("Actualizado correctamente");
+    </script>
+}

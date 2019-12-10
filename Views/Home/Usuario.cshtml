@@ -26,13 +26,13 @@
                     @Html.DisplayNameFor(model => model.password)
                 </th>*@
             <th>
-                @Html.DisplayNameFor(model => model.tipo_c)
+                @Html.DisplayNameFor(model => model.clientType)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.tipo_s)
+                @Html.DisplayNameFor(model => model.supplierType)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.tipo_e)
+                @Html.DisplayNameFor(model => model.employeeType)
             </th>
             <th>
                 Acción
@@ -66,7 +66,7 @@
                 <td>
                     <div class="custom-control custom-checkbox custom-control-inline">
                         @{
-                            ckCliente[index] = Convert.ToBoolean(item.tipo_c);
+                            ckCliente[index] = Convert.ToBoolean(item.clientType);
                         }
                         @Html.CheckBoxFor(modelItem => ckCliente[index], new { @class = "custom-control-input" })
                         <label class="custom-control-label" asp-for="@ckCliente[index]">Habilitar</label>
@@ -76,7 +76,7 @@
                 <td>
                     <div class="custom-control custom-checkbox custom-control-inline">
                         @{
-                            ckProveedor[index] = Convert.ToBoolean(item.tipo_s);
+                            ckProveedor[index] = Convert.ToBoolean(item.supplierType);
                         }
                         @Html.CheckBoxFor(modelItem => ckProveedor[index], new { @class = "custom-control-input" })
                         <label class="custom-control-label" asp-for="@ckProveedor[index]">Habilitar</label>
@@ -85,7 +85,7 @@
                 <td>
                     <div class="custom-control custom-checkbox custom-control-inline">
                         @{
-                            ckEmpleados[index] = Convert.ToBoolean(item.tipo_e);
+                            ckEmpleados[index] = Convert.ToBoolean(item.employeeType);
                         }
                         @Html.CheckBoxFor(modelItem => ckEmpleados[index], new { @class = "custom-control-input" })
                         <label class="custom-control-label" asp-for="@ckEmpleados[index]">Habilitar</label>

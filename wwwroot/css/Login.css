@@ -1,0 +1,37 @@
+﻿h1 {
+    text-align: center;
+}
+
+.loginForm {
+    width: 40%;
+    border: 2px #ec9404 solid;
+    margin: 5% auto;
+    border-radius: 10%;
+}
+
+    .loginForm input {
+        width: 90%;
+        display: block;
+        margin: 10% auto 0 auto;
+        font-size: 150%;
+    }
+
+    .loginForm .submit {
+        width: 90% !important;
+        margin: 5%;
+        background-color: #ec9404;
+        border: solid 2px #ec9404;
+    }
+
+        .loginForm .submit:hover {
+            border: gray solid 2px;
+            color: gray;
+        }
+
+    .loginForm .invalid-feedback {
+        margin: 0 0 0 5%;
+    }
+
+.mb-3 {
+    margin: 0 !important;
+}

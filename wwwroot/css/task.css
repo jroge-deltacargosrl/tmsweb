@@ -1,0 +1,11 @@
+﻿.displayFlex {
+    display: flex;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.marginAuto {
+    margin: auto!important;
+}

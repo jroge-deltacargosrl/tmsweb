@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<link href="~/css/task.css" rel="stylesheet" type="text/css" />
+<h2>Tipos de Camion</h2>
+<ul class="options displayBlock">
+    <li class="createLi">
+        <h4></h4>
+        <div class="createDiv">
+            <a href="">
+                <button class="btn btn-success">Añadir Tipo de Camion</button>
+            </a>
+        </div>
+    </li>
+    @foreach (TruckModel truck in ViewBag.truckList)
+    {
+        <li>
+            <h4>@truck.type</h4>
+            <div>
+                <a href="">
+                    <button class="btn btn-warning">Modificar</button>
+                </a>
+                <a href="">
+                    <button class="btn btn-danger">Eliminar</button>
+                </a>
+            </div>
+        </li>
+    }
+</ul>
+

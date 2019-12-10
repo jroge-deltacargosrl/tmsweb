@@ -1,0 +1,21 @@
+﻿.displayFlex {
+    display: flex;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.options {
+    width: 100%;
+    margin-top: 5%;
+}
+
+    .options li {
+        list-style: none;
+        display: flex;
+        padding: 1% 0 1% 0;
+        width: 75%;
+        display: flex;
+        border: lightgray 2px solid;
+    }

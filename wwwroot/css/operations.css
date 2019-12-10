@@ -1,0 +1,77 @@
+﻿.operationTitle {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-top: 1%;
+}
+
+    .operationTitle h4 a {
+        color: gray !important;
+    }
+
+.stagesDiv {
+    margin: 0;
+    padding: 0;
+    margin-left: 15%;
+}
+
+    .stagesDiv ul {
+        list-style: none;
+    }
+
+        .stagesDiv ul li {
+            margin: 1% 0;
+        }
+
+            .stagesDiv ul li a {
+                color: darkgray;
+            }
+
+.taskDiv {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+    .taskDiv .options {
+        width: 10%;
+    }
+
+        .taskDiv .options .opt {
+            width: 20% !important;
+            margin: auto 5%;
+        }
+
+    .taskDiv .hiddenOptions {
+        width: 10%;
+    }
+
+.check .img {
+    position: relative;
+    margin: auto 1% auto 0;
+    padding: 0;
+    width: 1.8%;
+    height: 1.5rem;
+    background-color: transparent;
+    background-image: url(../images/check2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.check .txt {
+    color: green;
+}
+
+@media (max-width: 500px) {
+    .taskDiv .options {
+        width: 30%;
+    }
+
+    .taskDiv .hiddenOptions {
+        width: 30%;
+    }
+
+    .check .img {
+        width: 5%;
+    }
+}
