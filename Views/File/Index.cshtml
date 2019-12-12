@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<link href="~/css/task.css" rel="stylesheet" type="text/css" />
+<h2>Tareas</h2>
+<table class="table table-hover" id="tblUsuarios" style="table-layout:fixed; width:100%; word-wrap:break-word;">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Acción
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (string fileString in ViewBag.fileList)
+        {
+            <tr>
+                <td>
+                    <span>
+                        @fileString
+                    </span>
+                </td>
+                <td>
+                    <a id=@fileString href="/TaskChange/" class="btn btn-outline-secondary">
+                        <i class="fas fa-sync">
+                            Actualizar
+                        </i>
+                    </a>
+                    <a href="" class="btn btn-outline-primary">
+                        <i class="fas fa-key">
+                            Eliminar
+                        </i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@if (ViewBag.response == 1)
+{
+    <script>
+        alert("Actualizado correctamente");
+    </script>
+}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+

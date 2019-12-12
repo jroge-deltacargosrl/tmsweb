@@ -2,29 +2,99 @@
     ViewData["Title"] = "Index";
 }
 <link href="~/css/task.css" rel="stylesheet" type="text/css" />
-<h2>Tipos de Camion</h2>
-<ul class="options displayBlock">
-    <li class="createLi">
-        <h4></h4>
-        <div class="createDiv">
-            <a href="">
-                <button class="btn btn-success">Añadir Tipo de Camion</button>
-            </a>
-        </div>
-    </li>
-    @foreach (TruckModel truck in ViewBag.truckList)
-    {
-        <li>
-            <h4>@truck.type</h4>
-            <div>
-                <a href="">
-                    <button class="btn btn-warning">Modificar</button>
-                </a>
-                <a href="">
-                    <button class="btn btn-danger">Eliminar</button>
-                </a>
-            </div>
-        </li>
-    }
-</ul>
+<h2>Tipos de camiones</h2>
+<table class="table table-hover" id="tblUsuarios" style="table-layout:fixed; width:100%; word-wrap:break-word;">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Acción
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (TruckModel truck in ViewBag.truckList)
+        {
+            string nuevoId = truck.id.ToString();
+            string nuevoHref = "truck-" + nuevoId;
+            string idTxt = "txt-" + nuevoHref;
+            string idInput = "input-" + nuevoHref;
+            string idSave = "save-" + nuevoHref;
+            string idCancel = "cancel-" + nuevoHref;
+            <tr>
+                <td>
+                    <span id=@idTxt>@truck.type</span>
+                    <input class="inputEdit" id=@idInput type="text" hidden name="name" value="" />
+                </td>
+                <td>
+                    <a id=@nuevoHref class="btnEdit btn btn-outline-secondary">
+                        <i class="fas fa-sync">
+                            Editar
+                        </i>
+                    </a>
+                    <a id=@idSave href="/Task/Update" class="btnSave btn btn-outline-secondary">
+                        <i class="fas fa-sync">
+                            Guardar
+                        </i>
+                    </a>
+                    <a id=@idCancel class="btnCancel btn btn-outline-secondary">
+                        <i class="fas fa-sync">
+                            Cancelar
+                        </i>
+                    </a>
+                    <a href="" class="btn btn-outline-primary">
+                        <i class="fas fa-key">
+                            Eliminar
+                        </i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@if (ViewBag.response == 1)
+{
+    <script>
+        alert("Actualizado correctamente");
+    </script>
+}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".btnSave").hide();
+        $(".btnCancel").hide();
+        $(".btnEdit").on("click", function () {
+            $id = $(this).attr("id");
+            $("#txt-" + $id).hide();
+            $(this).hide();
 
+            $("#input-" + $id).attr("value", $("#txt-" + $id).text());
+            $("#input-" + $id).show();
+            $("#save-" + $id).show();
+            $("#cancel-" + $id).show();
+        });
+
+        $(".btnCancel").on("click", function () {
+            $idCancel = $(this).attr("id");
+            $elements = $idCancel.split("-");
+            $id = "truck-" + $elements[2];
+
+            $("#txt-" + $id).show();
+            $("#" + $id).show();
+
+            $("#input-" + $id).attr("value", "");
+            $("#input-" + $id).hide();
+            $("#save-" + $id).hide();
+            $("#cancel-" + $id).hide();
+        });
+        $(".inputEdit").on("keyup", function () {
+            $text = $(this).val();
+            $idCancel = $(this).attr("id");
+            $elements = $idCancel.split("-");
+            $id = "truck-" + $elements[2];
+            $("#save-" + $id).attr("href", "/Truck/Update/" + $elements[2] + "/" + $text);
+        });
+    });
+</script>

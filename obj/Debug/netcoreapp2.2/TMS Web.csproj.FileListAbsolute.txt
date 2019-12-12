@@ -73,3 +73,4 @@ C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\R
 C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Service\Index.cshtml.g.cs
 C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Truck\Index.cshtml.g.cs
 C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\Company\Index.cshtml.g.cs
+C:\Users\hp\Desktop\DeltaCargo\Delta Cargo SRL\tms-web\obj\Debug\netcoreapp2.2\Razor\Views\File\Index.cshtml.g.cs

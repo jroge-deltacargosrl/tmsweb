@@ -50,7 +50,6 @@ namespace TMS_Web.Controllers
                             }
                         }
                         //This is for some operation's Timeline
-                        ViewBag.userEmail = usuario.email;
                         ViewBag.runningOperations = runningOperations;
                         ViewBag.historyOperations = historyOperations;
                         ViewBag.allOperations = OperationDAL.getAll();
@@ -93,7 +92,7 @@ namespace TMS_Web.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            UserResponse actualUser = HttpContext.Session.getObjectFromJson<UserResponse>("usuarioResponseJSON");
+            UserResponse actualUser = HttpContext.Session.getObjectFromJson<UserResponse>("actualUser");
             List<ProjectModel> operations = responseFromOperationAPI(actualUser.id);
             List<ProjectModel> runningOperations = new List<ProjectModel>();
             List<ProjectModel> historyOperations = new List<ProjectModel>();
@@ -152,7 +151,7 @@ namespace TMS_Web.Controllers
                 }
             }
             ViewBag.response = response;
-            UserResponse actualUser = HttpContext.Session.getObjectFromJson<UserResponse>("usuarioResponseJSON");
+            UserResponse actualUser = HttpContext.Session.getObjectFromJson<UserResponse>("actualUser");
             List<ProjectModel> operations = responseFromOperationAPI(actualUser.id);
             List<ProjectModel> runningOperations = new List<ProjectModel>();
             List<ProjectModel> historyOperations = new List<ProjectModel>();
@@ -169,6 +168,33 @@ namespace TMS_Web.Controllers
             }
             ViewBag.runningOperations = runningOperations;
             ViewBag.historyOperations = historyOperations;
+            ViewBag.allOperations = OperationDAL.getAll();
+            ViewBag.isLogged = true;
+            return View("Index");
+        }
+
+        public IActionResult DeleteFile(string fileName)
+        {
+            ViewBag.response = responseFromDeleteFileAPI(fileName).responseType;
+            UserResponse actualUser = HttpContext.Session.getObjectFromJson<UserResponse>("actualUser");
+            List<ProjectModel> operations = responseFromOperationAPI(actualUser.id);
+            List<ProjectModel> runningOperations = new List<ProjectModel>();
+            List<ProjectModel> historyOperations = new List<ProjectModel>();
+            foreach (ProjectModel p in operations)
+            {
+                if (!isFinalizedOperation(p))
+                {
+                    runningOperations.Add(p);
+                }
+                else
+                {
+                    historyOperations.Add(p);
+                }
+            }
+            ViewBag.runningOperations = runningOperations;
+            ViewBag.historyOperations = historyOperations;
+            ViewBag.allOperations = OperationDAL.getAll();
+            ViewBag.isLogged = true;
             return View("Index");
         }
 
@@ -335,6 +361,18 @@ namespace TMS_Web.Controllers
             return JsonConvert.DeserializeObject<FileResponse>(responseFile);
         }
 
+        private FileResponse responseFromDeleteFileAPI(string fileName)
+        {
+            RestRequest request = new RestRequest("operation/deleteFile/", Method.POST, DataFormat.Json);
+            var responseFile = new RequestAPI()
+                .addClient(new RestClient(urlRequest))
+                .addRequest(request)
+                .addHeader(new KeyValuePair<string, object>("Accept", "application/json"))
+                .addBodyData(fileName)
+                .buildRequest();
+            return JsonConvert.DeserializeObject<FileResponse>(responseFile);
+        }
+
         private List<ProjectModel> responseFromOperationAPI(int id)
         {
             var responseProjects = new RequestAPI()
@@ -342,7 +380,7 @@ namespace TMS_Web.Controllers
                            .addRequest(new RestRequest("operation/{typeAccess}/{id}", Method.GET))
                            .addHeader(new KeyValuePair<string, object>("Accept", "application/json"))
                            .addUrlSegmentParam(new KeyValuePair<string, object>("typeAccess", 2))
-                           .addUrlSegmentParam(new KeyValuePair<string, object>("id", 20))
+                           .addUrlSegmentParam(new KeyValuePair<string, object>("id", id))
                            .buildRequest();
             return JsonConvert.DeserializeObject<List<ProjectModel>>(responseProjects);
         }

@@ -130,7 +130,7 @@
         }
 
 .options {
-    width: 30%;
+    width: 20%;
     display: flex;
     color: gray;
     /* width: 10%; */
@@ -234,6 +234,36 @@
 
     .options .divDownload:hover {
         background-image: url(../../../../images/download-file-hover.png);
+        cursor: pointer;
+    }
+
+    .options .divDelete {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        height: 1.8rem;
+        background-color: transparent;
+        background-image: url(../../../../images/delete-file-no-hover.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .options .divDeleteHIDDEN {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        height: 1.8rem;
+        background-color: transparent;
+        background-image: url(../../../../images/delete-file-no-hover.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0;
+    }
+
+    .options .divDelete:hover {
+        background-image: url(../../../../images/delete-file-hover.png);
         cursor: pointer;
     }
 

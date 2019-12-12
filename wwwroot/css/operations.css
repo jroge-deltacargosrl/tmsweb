@@ -34,16 +34,17 @@
 }
 
     .taskDiv .options {
-        width: 10%;
+        width: 14%;
     }
 
         .taskDiv .options .opt {
-            width: 20% !important;
-            margin: auto 5%;
+            width: 15% !important;
+            height: 52%;
+            margin: auto 3%;
         }
 
     .taskDiv .hiddenOptions {
-        width: 10%;
+        width: 14%;
     }
 
 .check .img {

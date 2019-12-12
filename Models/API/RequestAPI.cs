@@ -106,7 +106,6 @@ namespace TMS_Web.Models.API
             }
         }
 
-
         public static T deserilizeProject<T>(string content) => JsonConvert.DeserializeObject<T>(content);
 
         public static string serializeObject<T>(T value) => JsonConvert.SerializeObject(value);
