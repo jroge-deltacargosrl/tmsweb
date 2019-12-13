@@ -10,6 +10,9 @@
                 Nombre
             </th>
             <th>
+                Descripcion
+            </th>
+            <th>
                 Acción
             </th>
         </tr>
@@ -23,19 +26,25 @@
             string idInput = "input-" + nuevoHref;
             string idSave = "save-" + nuevoHref;
             string idCancel = "cancel-" + nuevoHref;
+            string idDescription = "description-" + nuevoHref;
+            string idTxt2 = "txt2-" + nuevoHref;
             <tr>
                 <td>
                     <span id=@idTxt>@truck.type</span>
-                    <input class="inputEdit" id=@idInput type="text" hidden name="name" value="" />
+                    <input class="inputEdit" id=@idInput type="text" hidden value="" />
                 </td>
                 <td>
-                    <a id=@nuevoHref class="btnEdit btn btn-outline-secondary">
-                        <i class="fas fa-sync">
+                    <span id=@idTxt2>@truck.description</span>
+                    <input class="inputDescription" id=@idDescription type="text" hidden value="" />
+                </td>
+                <td>
+                    <a id=@nuevoHref class="btnEdit btn btn-primary">
+                        <i class="fa fa-edit">
                             Editar
                         </i>
                     </a>
-                    <a id=@idSave href="/Task/Update" class="btnSave btn btn-outline-secondary">
-                        <i class="fas fa-sync">
+                    <a id=@idSave href="/Task/Update" class="btnSave btn btn-warning">
+                        <i class="fa fa-sync">
                             Guardar
                         </i>
                     </a>
@@ -44,8 +53,8 @@
                             Cancelar
                         </i>
                     </a>
-                    <a href="" class="btn btn-outline-primary">
-                        <i class="fas fa-key">
+                    <a href="" class="btn btn-danger">
+                        <i class="fa fa-times">
                             Eliminar
                         </i>
                     </a>
@@ -72,8 +81,15 @@
 
             $("#input-" + $id).attr("value", $("#txt-" + $id).text());
             $("#input-" + $id).show();
+            $("#description-" + $id).attr("value", $("#txt2-" + $id).text());
+            $("#description-" + $id).show();
             $("#save-" + $id).show();
             $("#cancel-" + $id).show();
+
+            $txtDescription = $("#description-" + $id).val();
+            $txtEdit = $("#input-" + $id).val();
+            $elements = $id.split("-");
+            $("#save-" + $id).attr("href", "/Truck/Update/" + $elements[1] + "/" + $txtEdit + "/" + $txtDescription);
         });
 
         $(".btnCancel").on("click", function () {
@@ -84,17 +100,29 @@
             $("#txt-" + $id).show();
             $("#" + $id).show();
 
-            $("#input-" + $id).attr("value", "");
             $("#input-" + $id).hide();
+            $("#description-" + $id).hide();
             $("#save-" + $id).hide();
             $("#cancel-" + $id).hide();
         });
+
         $(".inputEdit").on("keyup", function () {
             $text = $(this).val();
-            $idCancel = $(this).attr("id");
-            $elements = $idCancel.split("-");
+            $elements = $(this).attr("id");
+            $elements = $elements.split("-");
             $id = "truck-" + $elements[2];
-            $("#save-" + $id).attr("href", "/Truck/Update/" + $elements[2] + "/" + $text);
+            $txtDescription = $("#description-" + $id).val();
+            console.log($text + $txtDescription);
+            $("#save-" + $id).attr("href", "/Truck/Update/" + $elements[2] + "/" + $text + "/" + $txtDescription);
+        });
+
+        $(".inputDescription").on("keyup", function () {
+            $text = $(this).val();
+            $elements = $(this).attr("id");
+            $elements = $elements.split("-");
+            $id = "truck-" + $elements[2];
+            $txtEdit = $("#input-" + $id).val();
+            $("#save-" + $id).attr("href", "/Truck/Update/" + $elements[2] + "/" + $txtEdit + "/" + $text);
         });
     });
 </script>

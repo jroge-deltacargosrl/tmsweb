@@ -17,5 +17,15 @@ namespace TMS_Web.Models.DAL
                         .buildRequest();
             return RequestAPI.deserilizeProject<List<TruckModel>>(response);
         }
+        public static List<TruckModel> update(TruckModel truck)
+        {
+            var response = new RequestAPI()
+                        .addClient(new RestClient(urlRequest))
+                        .addRequest(new RestRequest("truck/update/", Method.GET, DataFormat.Json))
+                        .addHeader(new KeyValuePair<string, object>("Accept", "application/json"))
+                        .addBodyData(truck)
+                        .buildRequest();
+            return RequestAPI.deserilizeProject<List<TruckModel>>(response);
+        }
     }
 }

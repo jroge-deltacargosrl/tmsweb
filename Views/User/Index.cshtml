@@ -98,16 +98,16 @@
                     </div>
                 </td>
                 <td>
-                    <a id="@item.id" href="a" class="btn btn-outline-secondary">
-                        <i class="fas fa-sync">
+                    <a id="@item.id" href="a" class="btn btn-primary">
+                        <i class="fa fa-edit">
                             Actualizar
                         </i>
                     </a>
                     @if (item.canSend)
                     {
                         string idToSendPassword = "/SendPassword/" + item.id;
-                        <a href=@idToSendPassword class="btn btn-outline-primary">
-                            <i class="fas fa-key">
+                        <a href=@idToSendPassword class="btn btn-danger">
+                            <i class="fa fa-key">
                                 Enviar Contraseña
                             </i>
                         </a>
@@ -121,6 +121,7 @@
     </tbody>
 </table>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="~/js/jQuery-3.4.1.js" type="text/javascript"></script>
 @if (ViewBag.response == 1)
 {
     <script>

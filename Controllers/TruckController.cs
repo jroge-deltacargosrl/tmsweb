@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TMS_Web.Models;
 using TMS_Web.Models.DAL;
 
 namespace TMS_Web.Controllers
@@ -10,11 +11,16 @@ namespace TMS_Web.Controllers
             ViewBag.truckList = TruckDAL.getAll();
             return View();
         }
-        [HttpGet("/Truck/Update/{id}/{newName}", Name = "truckUpdate")]
-        public IActionResult UpdateTruck(int id, string newName)
+        [HttpGet("/Truck/Update/{id}/{newName}/{newDescription}", Name = "truckUpdate")]
+        public IActionResult UpdateTruck(int id, string newName, string newDescription)
         {
-            ViewBag.response = 1;   
-            return View("Index");
+            ViewBag.response = TruckDAL.update(new TruckModel()
+            {
+                id = id,
+                description = newDescription,
+                type = newName
+            });
+            return RedirectToAction("Index");
         }
     }
 }
